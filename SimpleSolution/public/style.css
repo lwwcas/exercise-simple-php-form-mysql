@@ -1,0 +1,146 @@
+/* Reset & Base */
+* { box-sizing: border-box; }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px; /* Largura maior para a tabela */
+    margin: 50px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* Header inside container */
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 { margin: 0; font-size: 1.5rem; color: #1a1f23; }
+
+/* Buttons & Inputs */
+.btn-new {
+    text-decoration: none;
+    background: #2c7be5;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+
+.btn-new:hover { background: #1a5cb8; }
+
+form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2c7be5;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Table Styling */
+.table-wrapper { overflow-x: auto; }
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th {
+    text-align: left;
+    background: #f1f4f8;
+    padding: 12px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    color: #6e84a3;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #f0f2f5;
+    font-size: 0.95rem;
+}
+
+tr:hover { background-color: #f9fbff; }
+
+.uuid-text { color: #95aac9; font-size: 0.75rem; }
+
+.success {
+    background: #d4edda;
+    color: #155724;
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Grupo de botões para organizar o layout */
+.button-group {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Botão principal (Save) */
+.btn-save {
+    width: 100%;
+    padding: 12px;
+    background-color: #2c7be5;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: background 0.2s;
+}
+
+.btn-save:hover {
+    background-color: #1a5cb8;
+}
+
+/* Botão secundário (View List) */
+.btn-list {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #6e84a3;
+    background-color: #f1f4f8;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+
+.btn-list:hover {
+    background-color: #e2e8f0;
+    color: #1a1f23;
+}
